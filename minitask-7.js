@@ -8,7 +8,7 @@ const nilai = {
 function hitungNilai(nilai){
     const {matematika, bahasa_inggris, bahasa_indonesia, ipa}= nilai
     let nilai_total = matematika+bahasa_inggris+bahasa_indonesia+ipa
-    let rata_rata = nilai_total/4
+    let rata_rata = nilai_total/Object.keys(nilai).length
 
     const hasil =[nilai_total, rata_rata]
     return hasil
